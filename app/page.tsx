@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-r from-[#6A1B9A] via-[#8E24AA] to-[#9C27B0] text-white h-screen flex flex-col overflow-auto">
       {/* Navbar */}
-      <nav className="w-full bg-[#8E24AA] shadow-lg">
+      <nav className="w-full bg-[#8E24AA] shadow-lg fixed top-0 left-0 z-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
@@ -72,7 +72,7 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <header className="w-full max-w-6xl mx-auto p-8 text-center">
+      <header className="w-full max-w-6xl mx-auto p-8 text-center pt-20">
         <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#ff5e5b] to-[#9c6dde]">
           Welcome to Lynx NFT Marketplace
         </h1>
