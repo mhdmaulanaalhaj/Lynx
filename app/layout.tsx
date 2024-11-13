@@ -33,17 +33,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       {" "}
-      {/* Menambahkan tag html */}
       <body>
         {" "}
-        {/* Menambahkan tag body */}
         <WagmiProvider config={wagmiConfig}>
           <QueryClientProvider client={queryClient}>
-            <RainbowKitProvider
-              chains={[mainnet, polygon, optimism, arbitrum, base]}
-            >
-              {children}
-            </RainbowKitProvider>
+            <RainbowKitProvider>{children}</RainbowKitProvider>
           </QueryClientProvider>
         </WagmiProvider>
       </body>
